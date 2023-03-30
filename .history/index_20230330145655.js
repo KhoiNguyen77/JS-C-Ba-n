@@ -451,5 +451,3 @@ const img = document.createElement("img");
 img.classList.add("card-image");
 img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9jyeynlFwVGBRreQHauSuqrkhoKGk7ytIw8OpgZbNA&s");
 document.querySelector(".card").appendChild(img);
-
-// traversing DOM

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 5px;
+    list-style: none;
+    transform: translateX(100%);
+}
+.menu-link {
+    padding: 20px;
+    display: block;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+}

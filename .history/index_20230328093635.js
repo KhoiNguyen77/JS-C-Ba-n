@@ -347,7 +347,7 @@ without(
 isEqualOBject = (obj1, obj2) => {
   let objKey1 = Object.keys(obj1);
   let objKey2 = Object.keys(obj2);
-  if (objKey1.length !== objKey2.length) return false; //check length của mảng
+  if (objKey1.length !== objKey2.length) return false;   //check length của mảng
   let result = objKey1.every((key) => obj1[key] === obj2[key]); ///duyệt value qua từng key
   console.log(result);
   return result;
@@ -361,7 +361,7 @@ isEqualOBject(
   { a: 1, b: 2 }
 );
 
-// Node selector:
+// Node selector: 
 const singleNode = document.querySelector("h1");
 const singleNode2 = document.querySelector(".container");
 const singleNode3 = document.querySelector("#spinner");
@@ -373,83 +373,8 @@ console.log(singleNode2);
 const multiNode = document.querySelectorAll(".item");
 console.log(multiNode);
 
-// Getattribute() bằng node:
 
-let link = document.querySelector(".link");
-console.log(link.getAttribute("href"));
+// Getattribute():
 
-// get attribute bằng NodeList
-let listLi = document.querySelectorAll(".item");
-listLi.forEach((item) => {
-  console.log(item.getAttribute("class"));
-});
-
-// setAttribute() bằng node:
-link.setAttribute("target", "_blank");
-
-//setAttribute bằng NodeList;
-let link2 = document.querySelectorAll("a.link");
-link2.forEach((item) => item.setAttribute("target", "_blank"));
-
-// removeAttribute
-
-const p = document.querySelector("#spinner");
-p.removeAttribute("style");
-
-// hasAttribute
-console.log(p.hasAttribute("class")); // ==> false
-console.log(p.hasAttribute("id")); // ==> true
-
-// Thêm class
-// cú pháp: selector.classList.add("abc");
-
-const container = document.querySelector(".container"); //chỉ truyền được vào 1 class
-container.classList.add("active");
-
-//Xóa class
-//cú pháp: selector.classList.remove("abc");
-container.classList.remove("active"); //chỉ truyền được vào 1 class
-
-// kiểm tra có chứa class hay không
-// cú pháp: selector.classList.contains("abc"); ==> kiểm tra xem có chứa class abc không
-
-console.log(container.classList.contains("active")); // trả về false
-console.log(container.classList.contains("container")); // trả về true
-
-// Toggle menu
-// Cú pháp: selector.classList.toggle("abc"); ==> nếu đã có class rồi thì remove, không có thì add vào
-container.classList.toggle("active");
-
-// Lấy các class name của 1 thẻ
-// cú pháp: selector.className => trả ra các chuỗi selector
-const title = document.querySelector(".container");
-console.log(title.className);
-
-// Làm toggle menu
-const menuToggle = document.querySelector(".menu");
-menuToggle.classList.add("is-show");
-document.querySelector(".toggle").onclick = function () {
-  menuToggle.classList.toggle("is-show");
-};
-
-// Tạo ra element trong JS
-// document.createElements("tag")
-
-const div = document.createElement("p");
-
-// selector.appendChild
-// Cú pháp: document.body.appendchild
-document.querySelector("body").appendChild(div);
-div.classList.add("inu");
-div.innerHTML =`hello `;
-
-// BT tạo ra HTML bằng js
-const card = document.createElement("div");
-card.classList.add("card");
-document.querySelector("body").appendChild(card);
-const img = document.createElement("img");
-img.classList.add("card-image");
-img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9jyeynlFwVGBRreQHauSuqrkhoKGk7ytIw8OpgZbNA&s");
-document.querySelector(".card").appendChild(img);
-
-// traversing DOM
+let link = document.querySelector(".link").innerHTML;
+console.log(link);

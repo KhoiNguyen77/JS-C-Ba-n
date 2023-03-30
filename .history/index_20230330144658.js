@@ -435,21 +435,8 @@ document.querySelector(".toggle").onclick = function () {
 // Tạo ra element trong JS
 // document.createElements("tag")
 
-const div = document.createElement("p");
+const div = document.createElement("button");
 
 // selector.appendChild
 // Cú pháp: document.body.appendchild
 document.querySelector("body").appendChild(div);
-div.classList.add("inu");
-div.innerHTML =`hello `;
-
-// BT tạo ra HTML bằng js
-const card = document.createElement("div");
-card.classList.add("card");
-document.querySelector("body").appendChild(card);
-const img = document.createElement("img");
-img.classList.add("card-image");
-img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9jyeynlFwVGBRreQHauSuqrkhoKGk7ytIw8OpgZbNA&s");
-document.querySelector(".card").appendChild(img);
-
-// traversing DOM

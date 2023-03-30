@@ -449,7 +449,5 @@ card.classList.add("card");
 document.querySelector("body").appendChild(card);
 const img = document.createElement("img");
 img.classList.add("card-image");
-img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9jyeynlFwVGBRreQHauSuqrkhoKGk7ytIw8OpgZbNA&s");
+img.setAttribute("src", "image.png");
 document.querySelector(".card").appendChild(img);
-
-// traversing DOM
